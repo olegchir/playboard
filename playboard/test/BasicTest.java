@@ -142,6 +142,10 @@ public class BasicTest extends UnitTest {
         // Find all of Putin's adverts
         List<Advert> putinadverts = Advert.find("author.email", "putin@gmail.com").fetch();
         assertEquals(1, putinadverts.size());
+
+        // Find all comments related to Putin's posts
+        List<Comment> bobComments = Comment.find("advert.author.email", "putin@gmail.com").fetch();
+        assertEquals(2, bobComments.size());
      
         // Find the most recent advert
         Advert frontadvert = Advert.find("order by postedAt desc").first();
