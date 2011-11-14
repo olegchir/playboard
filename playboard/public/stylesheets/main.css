@@ -520,3 +520,12 @@ tr.odd {
 .hasError {
     background: pink;
 }
+
+#sortBy, #sortBy a {
+    color: #869AB1;
+    text-decoration: none;
+}
+
+#sortBy {
+    float: right;
+}

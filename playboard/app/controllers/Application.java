@@ -11,8 +11,10 @@ import play.mvc.*;
 import java.util.*;
 
 import models.*;
+import utils.SortBar;
 
 public class Application extends Controller {
+
 
     @Before
     static void addDefaults() {
@@ -20,11 +22,12 @@ public class Application extends Controller {
         renderArgs.put("boardBaseline", Play.configuration.getProperty("board.baseline"));
     }
 
-    public static void index() {
-        //Advert frontAdvert = Advert.find("order by postedAt desc").first();
-        ModelPaginator advertsFound = new ModelPaginator(Advert.class).orderBy("postedAt desc");
+    public static void index(String sortBy, String lastSortBy, String sortingReversed) {
+        ModelPaginator advertsFound = new ModelPaginator(Advert.class);
+        SortBar sortBar = new SortBar(advertsFound,sortingReversed,sortBy,lastSortBy);
+        advertsFound = sortBar.getAdvertsFound();
         advertsFound.setPageSize(5);
-        render(advertsFound);
+        render(advertsFound,sortBar);
     }
 
     public static void show(Long id) {
