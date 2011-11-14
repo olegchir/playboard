@@ -11,6 +11,29 @@
         #{get 'moreScripts' /}
     </head>
     <body>
-        #{doLayout /}
+       <div id="header">
+            <div id="logo">
+                Playboard Advertisement Portal.
+            </div>
+            <ul id="tools">
+                <li>
+                    <a href="#">Log in to write something</a>
+                </li>
+            </ul>
+            <div id="title">
+                <span class="about">About this board</span>
+                <h1><a href="#">${blogTitle}</a></h1>
+                <h2>${blogBaseline}</h2>
+            </div>
+        </div>
+
+        <div id="main">
+            #{doLayout /}
+        </div>
+
+        <p id="footer">
+            Playboard is an implementation of verification task for Corp corp.
+        </p>
     </body>
+
 </html>

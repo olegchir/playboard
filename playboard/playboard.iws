@@ -17,6 +17,7 @@
     <list default="true" id="efac478c-f7da-4495-a560-e857153c4900" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tags/display.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Application/index.html" afterPath="$PROJECT_DIR$/app/views/Application/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
     </list>
     <ignored path="playboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,10 +99,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="64" selection-start="255" selection-end="255" vertical-scroll-proportion="0.4178273">
+            <state line="15" column="58" selection-start="424" selection-end="424" vertical-scroll-proportion="-3.0405405">
               <folding />
             </state>
           </provider>
@@ -122,6 +123,15 @@
         <entry file="file://$PROJECT_DIR$/app/views/tags/display.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="50" column="6" selection-start="1700" selection-end="1700" vertical-scroll-proportion="-31.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="78" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.719697">
               <folding />
             </state>
           </provider>
@@ -151,6 +161,7 @@
         <option value="$PROJECT_DIR$/app/controllers/Application.java" />
         <option value="$PROJECT_DIR$/app/views/tags/display.html" />
         <option value="$PROJECT_DIR$/app/views/Application/index.html" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
       </list>
     </option>
   </component>
@@ -689,6 +700,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="58" selection-start="424" selection-end="424" vertical-scroll-proportion="-3.0405405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tags/display.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="6" selection-start="1700" selection-end="1700" vertical-scroll-proportion="-31.25">
@@ -696,9 +714,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="64" selection-start="255" selection-end="255" vertical-scroll-proportion="0.4178273">
+        <state line="34" column="78" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.719697">
           <folding />
         </state>
       </provider>
