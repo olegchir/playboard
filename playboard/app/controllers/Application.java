@@ -10,7 +10,7 @@ import models.*;
 public class Application extends Controller {
 
     public static void index() {
-         Advert frontAdvert = Advert.find("order by postedAt desc").first();
+        Advert frontAdvert = Advert.find("order by postedAt desc").first();
         List<Advert> olderAdverts = Advert.find(
             "order by postedAt desc"
         ).from(1).fetch(10);
