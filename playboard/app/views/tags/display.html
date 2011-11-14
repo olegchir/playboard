@@ -33,6 +33,7 @@
         </h3>
 
         #{list items:_advert.comments, as:'comment'}
+            #{if false==comment.isHidden()}
             <div class="comment">
                 <div class="comment-metadata">
                     <span class="comment-author">by ${comment.author},</span>
@@ -45,6 +46,7 @@
                     ${comment.content.escape().nl2br()}
                 </div>
             </div>
+            #{/if}
         #{/list}
 
     </div>

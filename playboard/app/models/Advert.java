@@ -4,10 +4,14 @@ import java.util.*;
 import javax.persistence.*;
 
 import play.db.jpa.*;
+import play.mvc.Scope;
+
+import play.libs.*;
+import play.cache.Cache;
+import utils.SessionUtil;
 
 @Entity
 public class Advert extends Model {
-
     public String title;
     public Date postedAt;
 
@@ -32,6 +36,7 @@ public class Advert extends Model {
         Comment newComment = new Comment(this, author, content).save();
         this.comments.add(newComment);
         this.save();
+        SessionUtil.saveCommentAccessInSession(newComment.getId());
         return this;
     }
 
