@@ -177,6 +177,9 @@
       <module fileurl="file://$PROJECT_DIR$/playboard.iml" filepath="$PROJECT_DIR$/playboard.iml" />
     </modules>
   </component>
+  <component name="ProjectResources">
+    <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="default-jdk" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/tmp" />
   </component>

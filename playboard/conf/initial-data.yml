@@ -1,0 +1,60 @@
+# you describe your data using the YAML notation here
+# and then load them using Fixtures.load("data.yml")
+
+User(lenin):
+   email: lenin@gmail.com
+   password: secret
+   fullname: Lenin
+
+User(stalin):
+   email: stalin@gmail.com
+   password: secret
+   fullname: Stalin
+
+User(putin):
+   email: putin@gmail.com
+   password: secret
+   fullname: Putin
+
+User(medvedev):
+   email: medvedev@gmail.com
+   password: secret
+   fullname: Medvedev
+
+Advert(advert1):
+    title:    my first advert
+    postedAt: 2011-11-14
+    content: >
+             this is my first advert...
+             oh my, it's awesome!
+             -- written from iPhone 3Gs
+    author: medvedev
+
+Advert(advert2):
+    title:    all posts are property of government
+    postedAt: 2011-11-13
+    content: >
+             be aware of that
+    author: putin
+
+Comment(c1):
+    author:         stalin
+    content:        >
+                    You are right !
+    postedAt:       2011-11-15
+    advert:         advert1
+
+Comment(c2):
+    author:         Guest
+    content:        >
+                    I knew that ...
+    postedAt:       2009-06-15
+    advert:         advert2
+
+Comment(c3):
+    author: lenin
+    content:  >
+              This post is useless crap, bro. All your base belongs to Soviets!
+    postedAt: 2009-06-16
+    advert:   advert2
+
