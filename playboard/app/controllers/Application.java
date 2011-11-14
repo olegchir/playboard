@@ -1,7 +1,10 @@
 package controllers;
 
 import play.*;
+import play.cache.Cache;
 import play.data.validation.Required;
+import play.libs.Codec;
+import play.libs.Images;
 import play.mvc.*;
 
 import java.util.*;
@@ -26,7 +29,8 @@ public class Application extends Controller {
 
     public static void show(Long id) {
         Advert advert = Advert.findById(id);
-        render(advert);
+        String randomID = Codec.UUID();
+        render(advert, randomID);
     }
 
     public static void postComment(Long postId, @Required String author, @Required String content) {
@@ -41,6 +45,13 @@ public class Application extends Controller {
         flash.success("Thanks for posting %s", author);
 
         show(postId);
+    }
+
+    public static void captcha(String id) {
+        Images.Captcha captcha = Images.captcha();
+        String code = captcha.getText("#E4EAFD");
+        Cache.set(id, code, "10mn");
+        renderBinary(captcha);
     }
 
 }
