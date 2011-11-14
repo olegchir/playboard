@@ -123,5 +123,38 @@ public class BasicTest extends UnitTest {
         assertEquals(0, Advert.count());
         assertEquals(0, Comment.count());
     }
+    
+    @Test
+    public void fullTest() {
+        Fixtures.loadModels("data.yml");
+     
+        // Count things
+        assertEquals(4, User.count());
+        assertEquals(2, Advert.count());
+        assertEquals(3, Comment.count());
+     
+        // Try to connect as users
+        assertNotNull(User.connect("lenin@gmail.com", "secret"));
+        assertNotNull(User.connect("stalin@gmail.com", "secret"));
+        assertNull(User.connect("jeff@gmail.com", "badpassword"));
+        assertNull(User.connect("tom@gmail.com", "secret"));
+     
+        // Find all of Putin's adverts
+        List<Advert> putinadverts = Advert.find("author.email", "putin@gmail.com").fetch();
+        assertEquals(1, putinadverts.size());
+     
+        // Find the most recent advert
+        Advert frontadvert = Advert.find("order by postedAt desc").first();
+        assertNotNull(frontadvert);
+        assertEquals("my first advert", frontadvert.title);
+     
+        // Check that this advert has two comments
+        assertEquals(1, frontadvert.comments.size());
+     
+        // advert a new comment
+        frontadvert.addComment("Jim", "Hello guys");
+        assertEquals(2, frontadvert.comments.size());
+        assertEquals(4, Comment.count());
+    }
 
 }

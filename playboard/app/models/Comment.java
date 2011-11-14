@@ -7,7 +7,7 @@ import play.db.jpa.*;
  
 @Entity
 public class Comment extends Model {
- 
+
     public String author;
     public Date postedAt;
      
