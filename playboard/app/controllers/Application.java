@@ -28,4 +28,10 @@ public class Application extends Controller {
         render(advert);
     }
 
+    public static void postComment(Long postId, String author, String content) {
+        Advert advert = Advert.findById(postId);
+        advert.addComment(author, content);
+        show(postId);
+    }
+
 }
