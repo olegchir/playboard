@@ -1,22 +1,18 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
  
-#{if frontAdvert}
-    
-    #{display advert:frontAdvert, as:'home' /}
-    
-    #{if olderAdverts.size()}
-    
-        <div class="older-posts">
-            <h3>Older adverts <span class="from">from this board</span></h3>
-        
-            #{list items:olderAdverts, as:'oldAdvert'}
-                #{display advert:oldAdvert, as:'teaser' /}
-            #{/list}
-        </div>
-        
-    #{/if}
-    
+#{if advertsFound.size()}
+
+<div class="older-posts">
+    <h3>Active adverts <span class="from">from this board</span></h3>
+
+    #{paginate.list items:advertsFound, as:'currAdvert'}
+        #{display advert:currAdvert, as:'teaser' /}
+    #{/paginate.list}
+
+    #{paginate.controls items:advertsFound /}
+</div>
+
 #{/if}
  
 #{else}

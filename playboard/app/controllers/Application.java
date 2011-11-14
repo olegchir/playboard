@@ -5,6 +5,7 @@ import play.cache.Cache;
 import play.data.validation.Required;
 import play.libs.Codec;
 import play.libs.Images;
+import play.modules.paginate.ModelPaginator;
 import play.mvc.*;
 
 import java.util.*;
@@ -20,11 +21,10 @@ public class Application extends Controller {
     }
 
     public static void index() {
-        Advert frontAdvert = Advert.find("order by postedAt desc").first();
-        List<Advert> olderAdverts = Advert.find(
-                "order by postedAt desc"
-        ).from(1).fetch(10);
-        render(frontAdvert, olderAdverts);
+        //Advert frontAdvert = Advert.find("order by postedAt desc").first();
+        ModelPaginator advertsFound = new ModelPaginator(Advert.class).orderBy("postedAt desc");
+        advertsFound.setPageSize(5);
+        render(advertsFound);
     }
 
     public static void show(Long id) {
