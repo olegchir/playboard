@@ -2,52 +2,16 @@
 #{set title:'Home' /}
  
 #{if frontAdvert}
-    <div class="post">
-        <h2 class="post-title">
-            <a href="#">${frontAdvert.title}</a>
-        </h2>
-        <div class="post-metadata">
-            <span class="post-author">by ${frontAdvert.author.fullname}</span>
-            <span class="post-date">${frontAdvert.postedAt.format('MMM dd')}</span>
-            <span class="post-comments">
-                &nbsp;|&nbsp; 
-                ${frontAdvert.comments.size() ?: 'no'} 
-                comment${frontAdvert.comments.size().pluralize()}
-                #{if frontAdvert.comments}
-                    , latest by ${frontAdvert.comments[0].author}
-                #{/if}
-            </span>
-        </div>
-        <div class="advert-content">
-            ${frontAdvert.content.nl2br()}
-        </div>
-    </div>
     
-    #{if olderAdverts.size() >= 1}
-        <div class="older-posts">    
-            <h3>Older posts <span class="from">from this blog</span></h3>
+    #{display post:frontAdvert, as:'home' /}
+    
+    #{if olderAdverts.size()}
+    
+        <div class="older-posts">
+            <h3>Older adverts <span class="from">from this board</span></h3>
         
             #{list items:olderAdverts, as:'oldAdvert'}
-                <div class="post">
-                    <h2 class="post-title">
-                        <a href="#">${oldAdvert.title}</a>
-                    </h2>
-                    <div class="post-metadata">
-                        <span class="post-author">
-                            by ${oldAdvert.author.fullname}
-                        </span>
-                        <span class="post-date">
-                            ${oldAdvert.postedAt.format('dd MMM yy')}
-                        </span>
-                        <div class="post-comments">
-                            ${oldAdvert.comments.size() ?: 'no'} 
-                            comment${oldAdvert.comments.size().pluralize()}
-                            #{if oldAdvert.comments}
-                                - latest by ${oldAdvert.comments[0].author}
-                            #{/if}
-                        </div>
-                    </div>
-                </div>
+                #{display post:oldAdvert, as:'teaser' /}
             #{/list}
         </div>
         
