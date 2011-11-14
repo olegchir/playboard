@@ -37,6 +37,81 @@ Advert(advert2):
              be aware of that
     author: putin
 
+
+Advert(advert3):
+    title:    all posts are property of government 3
+    postedAt: 2011-11-13
+    content: >
+             be aware of that
+    author: putin
+
+
+Advert(advert4):
+    title:    all posts are property of government 4
+    postedAt: 2011-11-13
+    content: >
+             be aware of that
+    author: putin
+
+
+Advert(advert5):
+    title:    all posts are property of government 5
+    postedAt: 2011-11-13
+    content: >
+             be aware of that
+    author: putin
+
+
+Advert(advert6):
+    title:    all posts are property of government 6
+    postedAt: 2011-11-13
+    content: >
+             be aware of that
+    author: putin
+
+Advert(advert7):
+    title:    all posts are property of government 7
+    postedAt: 2011-11-13
+    content: >
+             be aware of that
+    author: putin
+
+Advert(advert8):
+    title:    all posts are property of government 8
+    postedAt: 2011-11-13
+    content: >
+             be aware of that
+    author: putin
+
+Advert(advert9):
+    title:    all posts are property of government 9
+    postedAt: 2011-11-13
+    content: >
+             be aware of that
+    author: putin
+
+Advert(advert10):
+    title:    all posts are property of government 10
+    postedAt: 2011-11-13
+    content: >
+             be aware of that
+    author: putin
+
+Advert(advert11):
+    title:    all posts are property of government 11
+    postedAt: 2011-11-13
+    content: >
+             be aware of that
+    author: putin
+
+Advert(advert12):
+    title:    all posts are property of government 12
+    postedAt: 2011-11-13
+    content: >
+             be aware of that
+    author: putin
+
+
 Comment(c1):
     author:         stalin
     content:        >

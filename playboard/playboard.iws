@@ -18,6 +18,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Application.java" afterPath="$PROJECT_DIR$/app/controllers/Application.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Advert.java" afterPath="$PROJECT_DIR$/app/models/Advert.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Application/show.html" afterPath="$PROJECT_DIR$/app/views/Application/show.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/initial-data.yml" afterPath="$PROJECT_DIR$/conf/initial-data.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/main.css" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" />
     </list>
@@ -123,10 +124,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="60" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.60076046">
+            <state line="57" column="25" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,10 +171,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initial-data.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="initial-data.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="10" selection-start="113" selection-end="118" vertical-scroll-proportion="0.0">
+            <state line="107" column="53" selection-start="2326" selection-end="2326" vertical-scroll-proportion="1.6273764">
               <folding />
             </state>
           </provider>
@@ -226,7 +227,6 @@
         <option value="$PROJECT_DIR$/app/models/Comment.java" />
         <option value="$PROJECT_DIR$/test/data.yml" />
         <option value="$PROJECT_DIR$/test/BasicTest.java" />
-        <option value="$PROJECT_DIR$/conf/initial-data.yml" />
         <option value="$PROJECT_DIR$/app/Bootstrap.java" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/app/views/Application/index.html" />
@@ -237,6 +237,7 @@
         <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/views/Application/show.html" />
         <option value="$PROJECT_DIR$/app/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/conf/initial-data.yml" />
       </list>
     </option>
   </component>
@@ -826,13 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="113" selection-end="118" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="1" selection-start="1" selection-end="563" vertical-scroll-proportion="-0.0">
@@ -872,10 +866,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="60" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.60076046">
+        <state line="57" column="25" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/initial-data.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="53" selection-start="2326" selection-end="2326" vertical-scroll-proportion="1.6273764">
+          <folding />
         </state>
       </provider>
     </entry>
