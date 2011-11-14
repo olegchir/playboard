@@ -60,7 +60,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/app/controllers/Application.java" line="26" class="controllers.Application" package="controllers">
+      <breakpoint url="file://$PROJECT_DIR$/app/controllers/Application.java" line="27" class="controllers.Application" package="controllers">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -126,7 +126,7 @@
       <file leaf-file-name="Application.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+            <state line="37" column="8" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,19 +134,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/Application/show.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="38" selection-start="575" selection-end="575" vertical-scroll-proportion="-13.125">
+            <state line="29" column="60" selection-start="806" selection-end="806" vertical-scroll-proportion="0.5686275">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="14" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.41099477">
+            <state line="129" column="14" selection-start="1989" selection-end="1989" vertical-scroll-proportion="-12.56">
               <folding />
             </state>
           </provider>
@@ -234,9 +234,9 @@
         <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/models/Advert.java" />
+        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/app/controllers/Application.java" />
         <option value="$PROJECT_DIR$/app/views/Application/show.html" />
-        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
       </list>
     </option>
   </component>
@@ -856,9 +856,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="14" selection-start="1989" selection-end="1989" vertical-scroll-proportion="-12.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+        <state line="37" column="8" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -867,14 +874,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="38" selection-start="575" selection-end="575" vertical-scroll-proportion="-13.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="14" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.41099477">
+        <state line="29" column="60" selection-start="806" selection-end="806" vertical-scroll-proportion="0.5686275">
           <folding />
         </state>
       </provider>

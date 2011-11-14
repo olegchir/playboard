@@ -20,13 +20,18 @@
 <h3>Post a comment</h3>
 
 #{form @Application.postComment(advert.id)}
+    #{ifErrors}
+        <p class="error">
+            All fields are required!
+        </p>
+    #{/ifErrors}
     <p>
         <label for="author">Your name: </label>
-        <input type="text" name="author" id="author" />
+        <input type="text" name="author" id="author" value="${params.author}"/>
     </p>
     <p>
         <label for="content">Your message: </label>
-        <textarea name="content" id="content"></textarea>
+        <textarea name="content" id="content">${params.content}</textarea>
     </p>
     <p>
         <input type="submit" value="Submit your comment" />
