@@ -1,26 +1,26 @@
-*{ Display a post in one of these modes: 'full', 'home' or 'teaser' }*
+*{ Display a advert in one of these modes: 'full', 'home' or 'teaser' }*
 
-<div class="post ${_as == 'teaser' ? 'teaser' : ''}">
-    <h2 class="post-title">
-        <a href="#">${_post.title}</a>
+<div class="advert ${_as == 'teaser' ? 'teaser' : ''}">
+    <h2 class="advert-title">
+        <a href="@{Application.show(_advert.id)}">${_advert.title}</a>
     </h2>
-    <div class="post-metadata">
-        <span class="post-author">by ${_post.author.fullname}</span>,
-        <span class="post-date">${_post.postedAt.format('dd MMM yy')}</span>
+    <div class="advert-metadata">
+        <span class="advert-author">by ${_advert.author.fullname}</span>,
+        <span class="advert-date">${_advert.postedAt.format('dd MMM yy')}</span>
         #{if _as != 'full'}
-            <span class="post-comments">
-                &nbsp;|&nbsp; ${_post.comments.size() ?: 'no'}
-                comment${_post.comments.size().pluralize()}
-                #{if _post.comments}
-                    , latest by ${_post.comments[0].author}
+            <span class="advert-comments">
+                &nbsp;|&nbsp; ${_advert.comments.size() ?: 'no'}
+                comment${_advert.comments.size().pluralize()}
+                #{if _advert.comments}
+                    , latest by ${_advert.comments[0].author}
                 #{/if}
             </span>
         #{/if}
     </div>
     #{if _as != 'teaser'}
-        <div class="post-content">
+        <div class="advert-content">
             <div class="about">Detail: </div>
-            ${_post.content.nl2br()}
+            ${_advert.content.nl2br()}
         </div>
     #{/if}
 </div>
@@ -28,11 +28,11 @@
 #{if _as == 'full'}
     <div class="comments">
         <h3>
-            ${_post.comments.size() ?: 'no'}
-            comment${_post.comments.size().pluralize()}
+            ${_advert.comments.size() ?: 'no'}
+            comment${_advert.comments.size().pluralize()}
         </h3>
 
-        #{list items:_post.comments, as:'comment'}
+        #{list items:_advert.comments, as:'comment'}
             <div class="comment">
                 <div class="comment-metadata">
                     <span class="comment-author">by ${comment.author},</span>

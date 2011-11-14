@@ -87,33 +87,33 @@ body {
 
 /** Post **/
 
-.post .post-title {
+.advert .advert-title {
     margin: 0;
 }
 
-.post .post-title a {
+.advert .advert-title a {
     font-size: 36px;
     color: #F5C2CC;
     text-decoration: none;
 }
 
-.post .post-metadata {
+.advert .advert-metadata {
     color: #BAC36E;
     display: block;
     font-size: 70%;
     display: inline-block;
 }
 
-.post .post-author {
+.advert .advert-author {
     font-size: 130%;
     font-weight: bold;
 }
 
-.post .post-metadata a {
+.advert .advert-metadata a {
     color: #9FA85D;
 }
 
-.post .post-content {
+.advert .advert-content {
     position: relative;
     background: #fff;
     padding: 10px;
@@ -123,7 +123,7 @@ body {
     -webkit-box-shadow: 0 2px 0 #BBBBBB;
 }
 
-.post .about {
+.advert .about {
     text-indent: -999em;
     display: block;
     width: 0;
@@ -138,38 +138,38 @@ body {
 }
 
 
-/** Older posts **/
+/** Older adverts **/
 
-.older-posts h3 {
+.older-adverts h3 {
     color: #869AB1;
     font-size: 28px;
     margin-bottom: 15px;
 }
 
-.older-posts h3 .from {
+.older-adverts h3 .from {
     font-weight: normal;
     font-size: 70%;
 }
 
-.older-posts .post {
+.older-adverts .advert {
     margin-bottom: 15px;
     border-left: 3px solid #869AB1;
     padding-left: 10px;
 }
 
-.older-posts .post-title a {
+.older-adverts .advert-title a {
     padding: 0;
     color: #131921;
     font-size: 20px;
 }
 
-.older-posts .post-metadata {
+.older-adverts .advert-metadata {
     color: #869AB1;
     padding: 0;
     font-size: 12px;
 }
 
-.older-posts .post-metadata a {
+.older-adverts .advert-metadata a {
     color: #869AB1;
 }
 
@@ -478,20 +478,20 @@ tr.odd {
     display: none;
 }
 
-/** My posts **/
+/** My adverts **/
 
-#admin .post {
+#admin .advert {
     background: #fff;
     padding: 4px;
     margin: 0;
     font-size: 90%;
 }
 
-#admin .post.odd {
+#admin .advert.odd {
     background: #C0CBE5;
 }
 
-#admin .post a {
+#admin .advert a {
     color: #444;
 }
 
@@ -521,7 +521,7 @@ tr.odd {
     top: -1px;
 }
 
-#postContent {
+#advertContent {
     width: 100%;
     height: 300px;
 }

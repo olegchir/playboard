@@ -3,7 +3,7 @@
  
 #{if frontAdvert}
     
-    #{display post:frontAdvert, as:'home' /}
+    #{display advert:frontAdvert, as:'home' /}
     
     #{if olderAdverts.size()}
     
@@ -11,7 +11,7 @@
             <h3>Older adverts <span class="from">from this board</span></h3>
         
             #{list items:olderAdverts, as:'oldAdvert'}
-                #{display post:oldAdvert, as:'teaser' /}
+                #{display advert:oldAdvert, as:'teaser' /}
             #{/list}
         </div>
         

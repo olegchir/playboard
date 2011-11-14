@@ -23,4 +23,9 @@ public class Application extends Controller {
         render(frontAdvert, olderAdverts);
     }
 
+    public static void show(Long id) {
+        Advert advert = Advert.findById(id);
+        render(advert);
+    }
+
 }
