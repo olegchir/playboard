@@ -37,6 +37,9 @@ public class Application extends Controller {
         }
 
         advert.addComment(author, content);
+
+        flash.success("Thanks for posting %s", author);
+
         show(postId);
     }
 
