@@ -529,3 +529,8 @@ tr.odd {
 #sortBy {
     float: right;
 }
+
+#hiddenCommentNotification {
+    margin-top:10px;
+    color:#869AB1;
+}

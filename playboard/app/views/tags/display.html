@@ -31,7 +31,7 @@
             ${_advert.comments.size() ?: 'no'}
             comment${_advert.comments.size().pluralize()}
         </h3>
-
+        %{ hiddenCommentsNum = 0 }%
         #{list items:_advert.comments, as:'comment'}
             #{if false==comment.isHidden()}
             <div class="comment">
@@ -47,7 +47,10 @@
                 </div>
             </div>
             #{/if}
+            #{else}
+              %{ hiddenCommentsNum = hiddenCommentsNum+1 }%
+            #{/else}
         #{/list}
-
+        <div id="hiddenCommentNotification">(${hiddenCommentsNum} comments hidden because you are not logged in.)</div>
     </div>
 #{/if}
