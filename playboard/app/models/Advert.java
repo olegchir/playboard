@@ -34,4 +34,12 @@ public class Advert extends Model {
         this.save();
         return this;
     }
+
+    public Advert previous() {
+        return Advert.find("postedAt < ? order by postedAt desc", postedAt).first();
+    }
+
+    public Advert next() {
+        return Advert.find("postedAt > ? order by postedAt asc", postedAt).first();
+    }
 }

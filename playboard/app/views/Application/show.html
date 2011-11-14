@@ -1,4 +1,19 @@
 #{extends 'main.html' /}
 #{set title:advert.title /}
-
+<ul id="pagination">
+    #{if advert.previous()}
+        <li id="previous">
+            <a href="@{Application.show(advert.previous().id)}">
+                ${advert.previous().title}
+            </a>
+        </li>
+    #{/if}
+    #{if advert.next()}
+        <li id="next">
+            <a href="@{Application.show(advert.next().id)}">
+                ${advert.next().title}
+            </a>
+        </li>
+    #{/if}
+</ul>
 #{display advert:advert, as:'full' /}
