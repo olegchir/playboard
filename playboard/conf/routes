@@ -5,6 +5,12 @@
 # Home page
 GET     /                                       Application.index
 
+# "Secure" module
+*       /                                       module:secure
+
+# Crud admin module
+*      /admin              module:crud
+
 # Posts
 GET     /posts/{id}                             Application.show
 
