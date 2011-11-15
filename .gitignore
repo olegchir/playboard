@@ -4,3 +4,6 @@ playboard/tmp/
 playboard/lib/
 playboard/test-result/
 playboard/*.log
+playboard/playboard.iml
+playboard/playboard.ipr
+playboard/playboard.iws

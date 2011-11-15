@@ -51,6 +51,8 @@
               %{ hiddenCommentsNum = hiddenCommentsNum+1 }%
             #{/else}
         #{/list}
+        #{if hiddenCommentsNum>0 }
         <div id="hiddenCommentNotification">(${hiddenCommentsNum} comments hidden because you are not logged in.)</div>
+        #{/if}
     </div>
 #{/if}
