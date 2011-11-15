@@ -3,12 +3,16 @@ package models;
 import java.util.*;
 import javax.persistence.*;
 
+import controllers.Check;
+import models.deadbolt.Role;
+import models.deadbolt.RoleHolder;
 import play.data.validation.Email;
 import play.data.validation.Required;
 import play.db.jpa.*;
 
+@Check({"admin"})
 @Entity
-public class User extends Model {
+public class User extends Model implements RoleHolder {
 
     @Email
     @Required
@@ -31,5 +35,22 @@ public class User extends Model {
 
     public String toString() {
         return email;
+    }
+
+    public List<? extends Role> getRoles()
+    {
+        ArrayList<MyRole> roles = new ArrayList<MyRole>();
+        if (isAdmin) {
+            roles.add(new MyRole("admin"));
+        }
+        if (isAdvertiser) {
+            roles.add(new MyRole("advertiser"));
+        }
+        return roles;
+    }
+
+    public static User getByUserName(String email)
+    {
+        return find("byEmail", email).first();
     }
 }

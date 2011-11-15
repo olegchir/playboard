@@ -2,3 +2,7 @@
 
 require:
     - play
+    - secure
+    - crud
+    - play -> paginate head
+    - play -> deadbolt 1.4.3

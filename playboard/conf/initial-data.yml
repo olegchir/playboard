@@ -16,11 +16,13 @@ User(putin):
    email: putin@gmail.com
    password: secret
    fullname: Putin
+   isAdvertiser: true
 
 User(medvedev):
    email: medvedev@gmail.com
    password: secret
    fullname: Medvedev
+   isAdvertiser: true
 
 Advert(advert1):
     title:    my first advert

@@ -1,5 +1,6 @@
 package controllers;
 
+import controllers.deadbolt.Deadbolt;
 import play.*;
 import play.cache.Cache;
 import play.data.validation.Required;
@@ -13,10 +14,7 @@ import java.util.*;
 import models.*;
 import utils.SortBar;
 
-@With(Secure.class)
 public class Application extends Controller {
-
-
     @Before
     static void addDefaults() {
         renderArgs.put("boardTitle", Play.configuration.getProperty("board.title"));

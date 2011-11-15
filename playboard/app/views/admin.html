@@ -24,6 +24,24 @@
         </div>
 
         <div id="main">
+
+            <ul id="adminMenu">
+                <li class="${request.controller == 'Admin' ? 'selected' : ''}">
+                    <a href="@{Admin.index()}">My posts</a>
+                </li>
+                #{deadbolt.restrict roles:[['admin']]}
+                    <li class="${request.controller == 'Adverts' ? 'selected' : ''}">
+                        <a href="@{Adverts.list()}">Posts</a>
+                    </li>
+                    <li class="${request.controller == 'Comments' ? 'selected' : ''}">
+                        <a href="@{Comments.list()}">Comments</a>
+                    </li>
+                    <li class="${request.controller == 'Users' ? 'selected' : ''}">
+                        <a href="@{Users.list()}">Users</a>
+                    </li>
+                #{/deadbolt.restrict}
+            </ul>
+
             #{doLayout /}
         </div>
 

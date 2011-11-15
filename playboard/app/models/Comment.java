@@ -2,11 +2,13 @@ package models;
  
 import java.util.*;
 import javax.persistence.*;
- 
+
+import controllers.Check;
 import play.db.jpa.*;
 import utils.AuthUtil;
 import utils.SessionUtil;
 
+@Check({"admin", "advertiser"})
 @Entity
 public class Comment extends Model {
 

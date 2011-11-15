@@ -1,5 +1,7 @@
 package controllers;
 
+import controllers.deadbolt.Deadbolt;
+import controllers.deadbolt.DeadboltHandler;
 import play.*;
 import play.mvc.*;
 
@@ -13,7 +15,7 @@ import models.*;
  */
 
 
-@With(Secure.class)
+@With(Deadbolt.class)
 public class Admin extends Controller {
 
     @Before
