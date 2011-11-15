@@ -9,6 +9,7 @@ GET     /                                       Application.index
 *       /                                       module:secure
 
 # Crud admin module
+GET     /admin/?                                Admin.index
 *      /admin              module:crud
 
 # Posts

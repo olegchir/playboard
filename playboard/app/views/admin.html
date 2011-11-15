@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>#{get 'title' /}</title>
@@ -11,20 +10,17 @@
         <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
         #{get 'moreScripts' /}
     </head>
-    <body>
-       <div id="header">
+    <body id="admin">
+
+        <div id="header">
             <div id="logo">
-                Playboard
+                Playboard profile <span>administration</span>
             </div>
             <ul id="tools">
                 <li>
-                    <a href="@{Admin.index()}">Log in to write something</a>
+                    <a href="@{Secure.logout()}">Log out</a>
                 </li>
             </ul>
-            <div id="title">
-                <h1><a href="@{Application.index()}">${boardTitle}</a></h1>
-                <h2>${boardBaseline}</h2>
-            </div>
         </div>
 
         <div id="main">
@@ -34,6 +30,6 @@
         <p id="footer">
             Playboard is an implementation of verification task for Corp corp.
         </p>
-    </body>
 
+    </body>
 </html>

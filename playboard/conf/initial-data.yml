@@ -5,6 +5,7 @@ User(lenin):
    email: lenin@gmail.com
    password: secret
    fullname: Lenin
+   isAdmin: true
 
 User(stalin):
    email: stalin@gmail.com

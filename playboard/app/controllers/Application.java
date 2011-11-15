@@ -13,6 +13,7 @@ import java.util.*;
 import models.*;
 import utils.SortBar;
 
+@With(Secure.class)
 public class Application extends Controller {
 
 
