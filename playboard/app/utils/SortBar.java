@@ -2,6 +2,8 @@ package utils;
 
 import play.modules.paginate.ModelPaginator;
 
+import java.util.Date;
+
 /**
  * User: olegchir
  */

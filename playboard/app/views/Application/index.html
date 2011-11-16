@@ -1,9 +1,23 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
- 
-#{if advertsFound.size()}
 
-<div class="older-posts">
+<script>
+    $(function() {
+        $('#showPostsAfterDateField').datetimepicker({onClose: reloadMinimumDate, dateFormat: "yy-mm-dd"});
+        function reloadMinimumDate(date) {
+            $.getJSON("@{Application.indexScreenSetMinimumDate()}", {minimumDate:date}, function(ok) {
+                window.location.href = window.location.href;
+            });
+        }
+    });
+</script>
+
+ <div id="showPostsAfterDateFieldHolder">
+Show posts only after: <input type="text" name="showPostsAfterDateField" id="showPostsAfterDateField" />
+ </div>
+
+#{if advertsFound.size()}
+<div class="older-adverts">
     <h3>Active adverts <span class="from">on this board</span>
         <span id="sortBy">
             Sort by:

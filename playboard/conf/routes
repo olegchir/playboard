@@ -4,6 +4,7 @@
 
 # Home page
 GET     /                                       Application.index
+GET     /indexScreenSetMinimumDate              Application.indexScreenSetMinimumDate
 
 # "Secure" module
 *       /                                       module:secure

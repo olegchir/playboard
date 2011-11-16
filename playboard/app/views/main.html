@@ -9,6 +9,14 @@
         #{get 'moreStyles' /}
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
         <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+
+        <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/javascripts/jquery-ui-1.9m6/themes/base/jquery.ui.all.css'}">
+        <script src="@{'/public/javascripts/jquery-ui-1.9m6/ui/jquery-ui.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/jquery-ui-1.9m6/ui/jquery.ui.datepicker.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/jquery-ui-1.9m6/ui/jquery.ui.slider.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/trentrichardson-jQuery-Timepicker-Addon-v0.9.7-3/jquery-ui-timepicker-addon.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/javascripts/trentrichardson-jQuery-Timepicker-Addon-v0.9.7-3/jquery-ui-timepicker-addon.css'}">
+
         #{get 'moreScripts' /}
     </head>
     <body>
@@ -28,6 +36,7 @@
         </div>
 
         <div id="main">
+
             #{doLayout /}
         </div>
 

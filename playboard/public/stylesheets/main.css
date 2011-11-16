@@ -527,6 +527,12 @@ tr.odd {
     text-decoration: none;
 }
 
+#showPostsAfterDateFieldHolder {
+    color: #869AB1;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
 #sortBy {
     float: right;
 }
